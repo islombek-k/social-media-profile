@@ -16,7 +16,6 @@ const profileServices = {
     }
   },
   updateProfileData: async (payload: ProfileFormType) => {
-    console.log("payload", payload);
     try {
       const response = await fetch("api/edit-user", {
         method: "PUT",
@@ -25,7 +24,6 @@ const profileServices = {
         },
         body: JSON.stringify(payload),
       });
-      console.log("JSON.stringify(payload)", JSON.stringify(payload));
       if (!response.ok) {
         throw new Error("error 404");
       }

@@ -9,9 +9,7 @@ export const handlers = [
   http.get("/api/users", () => {
     return HttpResponse.json(users);
   }),
-  http.put("api/edit-user", async ({ request }) => {
-    const data = await request.json();
-    console.log("data", data);
+  http.put("api/edit-user", async () => {
     return Response.json({ success: true });
   }),
 ];
