@@ -1,7 +1,4 @@
-type ExperienceCardType = {
-  title: string;
-  description: string;
-};
+import { ExperienceCardType } from "../../types/components";
 
 const ExperienceCard = ({ title, description }: ExperienceCardType) => {
   return (

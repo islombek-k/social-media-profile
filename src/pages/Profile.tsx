@@ -8,7 +8,6 @@ const ProfilePage = () => {
       id: 1,
     },
   });
-  console.log("profileData", profileData?.image);
 
   return (
     <div>
@@ -19,7 +18,15 @@ const ProfilePage = () => {
         followers={profileData?.followers}
         userId={profileData?.id}
       />
-      <Experience />
+      <Experience
+        experience={profileData?.experience}
+        about={profileData?.about}
+        location={profileData?.location}
+        website={profileData?.website}
+        email={profileData?.email}
+        username={profileData?.username}
+        myCompanies={profileData?.my_companies}
+      />
     </div>
   );
 };

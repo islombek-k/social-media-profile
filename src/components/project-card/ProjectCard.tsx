@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
+import { ProjectCardI } from "../../types/components";
 
-type ProjectCardType = {
-  label: string;
-  image: string;
-  company: string;
-  slug: string;
-  duration: string;
-};
-
-const ProjectCard = ({ label, image, company, slug, duration }: ProjectCardType) => {
+const ProjectCard = ({
+  label,
+  image,
+  company,
+  slug,
+  duration,
+}: ProjectCardI) => {
   return (
     <div className="border-2 border-gray-100 rounded-md p-6 w-full">
       <div className="flex items-center gap-2">

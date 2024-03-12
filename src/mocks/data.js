@@ -8,11 +8,31 @@ export const users = [
     about:
       "I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development. I'm always striving to grow and learn something new and I don't take myself too seriously. I'm passionate about helping startups grow, improve their customer experience, and to raise venture capital through good design.",
     location: "🇦🇺 Melbourne, Australia",
-    website: "biscuitoliva.com",
+    website: "https://biscuitoliva.com",
     email: "hello@biscuitoliva.com",
     image:
       "https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1709942400&semt=ais",
     followers: 134,
+    my_companies: [
+      {
+        label: "Lead Product Designer",
+        image:
+          "https://cdn.freebiesupply.com/logos/large/2x/dribbble-5-logo-png-transparent.png",
+        company: "Dribbble",
+        duration: "May 2020 - Present",
+        slug: "https://dribbble.com",
+        id: 1,
+      },
+      {
+        label: "Product Designer",
+        image:
+          "http://www.kaypeetza.com/wp-content/uploads/2020/10/Apple-COVER-THUMB.jpg",
+        company: "Apple",
+        duration: "Jun 2018 - May 2020",
+        slug: "https://apple.com",
+        id: 2,
+      },
+    ],
   },
   {
     id: 2,
@@ -66,3 +86,4 @@ export const users = [
     followers: 331,
   },
 ];
+

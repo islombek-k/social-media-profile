@@ -1,12 +1,5 @@
 import { Link } from "react-router-dom";
-
-type ProfileHeaderType = {
-  image: string;
-  name: string;
-  username: string;
-  followers: number;
-  userId: number;
-};
+import { ProfileHeaderType } from "../../types/profile";
 
 const ProfileHeader = ({
   image,
@@ -31,11 +24,11 @@ const ProfileHeader = ({
         <div className="flex items-center justify-center gap-2 mt-8">
           <Link
             to={`/edit/${userId}`}
-            className="border border-gray-200 rounded-md py-1.5 px-3"
+            className="border border-gray-200 rounded-md py-1.5 px-3 hover:opacity-80"
           >
             Edit profile
           </Link>
-          <button className="bg-secondary text-white rounded-md py-1.5 px-3">
+          <button className="bg-secondary text-white rounded-md py-1.5 px-3 cursor-default">
             {followers} followers
           </button>
         </div>
